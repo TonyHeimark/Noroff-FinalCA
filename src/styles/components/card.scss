@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    color: $color-white;
+    font-size: 18px;
+
+    background: $color-black;
+    width: 150px;
+    padding: 15px 0 10px;
+    border-radius: 9px;
+    margin: -15px auto 0;
+    text-align: center;
+  }
+}

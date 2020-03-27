@@ -1,0 +1,47 @@
+.accordion {
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 100px;
+
+  &__handler {
+    cursor: pointer;
+    background: $color-beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 9px;
+
+    h2 {
+      margin: 0;
+      @media (max-width: 525px) {
+        font-size: 18px;
+      }
+    }
+
+    img {
+      height: 35px;
+      @media (max-width: 525px) {
+        height: 25px;
+      }
+    }
+  }
+
+  &__drawer {
+    overflow: hidden;
+    height: 300px;
+    max-height: 0px;
+    transition: 0.3s;
+    margin-top: 30px;
+
+    &--open {
+      transition: 0.3s;
+      max-height: 300px;
+    }
+
+    p {
+      margin: 0 auto;
+      padding: 10px 4%;
+    }
+  }
+}

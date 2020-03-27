@@ -1,0 +1,28 @@
+.signup-form {
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid $color-black;
+    background: none;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    background: $color-black;
+    color: $color-white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-black;
+      background: $color-beige;
+      transition: 0.3s;
+    }
+  }
+}
